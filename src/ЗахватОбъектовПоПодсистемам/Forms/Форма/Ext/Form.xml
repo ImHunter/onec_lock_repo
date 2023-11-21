@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
 			<Button name="ФормаКомандаСконструировать" id="79">
@@ -12,6 +12,7 @@
 	</AutoCommandBar>
 	<Events>
 		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 		<Event name="OnClose">ПриЗакрытии</Event>
 	</Events>
 	<ChildItems>
@@ -113,18 +114,21 @@
 								<InputField name="ПутьКХранилищу" id="13">
 									<DataPath>Объект.ПутьКХранилищу</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<ClearButton>true</ClearButton>
 									<ContextMenu name="ПутьКХранилищуКонтекстноеМеню" id="14"/>
 									<ExtendedTooltip name="ПутьКХранилищуРасширеннаяПодсказка" id="15"/>
 								</InputField>
 								<InputField name="ИмяПользователяХранилища" id="7">
 									<DataPath>Объект.ИмяПользователяХранилища</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<ClearButton>true</ClearButton>
 									<ContextMenu name="ИмяПользователяХранилищаКонтекстноеМеню" id="8"/>
 									<ExtendedTooltip name="ИмяПользователяХранилищаРасширеннаяПодсказка" id="9"/>
 								</InputField>
 								<InputField name="ПарольХранилища" id="10">
 									<DataPath>Объект.ПарольХранилища</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<ClearButton>true</ClearButton>
 									<ContextMenu name="ПарольХранилищаКонтекстноеМеню" id="11"/>
 									<ExtendedTooltip name="ПарольХранилищаРасширеннаяПодсказка" id="12"/>
 								</InputField>
@@ -157,18 +161,22 @@
 								<InputField name="ИмяПользователяИБ" id="25">
 									<DataPath>Объект.ИмяПользователяИБ</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<ClearButton>true</ClearButton>
 									<ContextMenu name="ИмяПользователяИБКонтекстноеМеню" id="26"/>
 									<ExtendedTooltip name="ИмяПользователяИБРасширеннаяПодсказка" id="27"/>
 								</InputField>
 								<InputField name="ПарольИБ" id="28">
 									<DataPath>Объект.ПарольИБ</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<ClearButton>true</ClearButton>
 									<ContextMenu name="ПарольИБКонтекстноеМеню" id="29"/>
 									<ExtendedTooltip name="ПарольИБРасширеннаяПодсказка" id="30"/>
 								</InputField>
 								<InputField name="ИмяРасширения" id="43">
 									<DataPath>Объект.ИмяРасширения</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<DropListButton>true</DropListButton>
+									<ClearButton>true</ClearButton>
 									<ContextMenu name="ИмяРасширенияКонтекстноеМеню" id="44"/>
 									<ExtendedTooltip name="ИмяРасширенияРасширеннаяПодсказка" id="45"/>
 								</InputField>
