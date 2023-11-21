@@ -31,4 +31,4 @@
 1. Создайте новую внешнюю обработку. 
 2. Выполните команду Действия/Загрузить из файлов...
 
-Проект также [представлен](https://infostart.ru/public/1980000/) на платформе Инфостарт.
+Проект также [представлен](https://infostart.ru/public/1980000/) на платформе [![Инфостарт](https://infostart.ru/bitrix/templates/sandbox_empty/assets/tpl/abo/img/logo.svg)](https://infostart.ru/)
